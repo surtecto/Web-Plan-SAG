@@ -1,0 +1,66 @@
+PLAN DE ORDENAMIENTO TERRITORIAL · SAN ANDRÉS DE GILES 2020–2030
+Sitio web público — Sendas, Líneas y Ocasiones
+=================================================================
+
+QUÉ ES
+Un sitio estático (no necesita base de datos ni servidor especial).
+Fuente del contenido: "Texto Final Plan SAG - Borrador 02-2025.pdf".
+
+  index.html          página única
+  css/estilo.css      identidad visual pampeana
+  js/config.js        ← LO ÚNICO QUE HAY QUE EDITAR para activar opiniones
+  js/datos.js         Sendas, Líneas, Ocasiones, textos, coordenadas
+  js/geo.js           límite del partido, arroyos, caminos, plazas rurales,
+                      senderos y escuelas rurales (del SIG de la carpeta)
+  js/app.js           funcionamiento
+  img/                mapas, gráficos e imágenes del Plan
+  apps-script/        código para recibir opiniones en una planilla
+
+1) PUBLICAR
+Subir TODA la carpeta, tal cual, a cualquier hosting:
+  · surtectura.ar o el sitio municipal (por FTP / administrador de archivos)
+  · Netlify (app.netlify.com/drop: arrastrar la carpeta)
+  · GitHub Pages
+Para probarlo en la computadora conviene abrirlo desde un hosting o un
+servidor local; con doble clic en index.html funciona todo menos, según el
+navegador, el envío de opiniones.
+El mapa satelital, las tipografías y la librería del mapa se cargan de
+internet (Esri, Google Fonts, unpkg): el sitio necesita conexión.
+
+2) ACTIVAR LAS OPINIONES (una sola vez, 5 minutos)
+  a. Crear una planilla nueva en Google Sheets (ej. "Opiniones Plan SAG").
+  b. Menú Extensiones > Apps Script. Borrar lo que haya y pegar el
+     contenido de apps-script/Codigo.gs. Guardar.
+  c. Botón Implementar > Nueva implementación > tipo "Aplicación web".
+       Ejecutar como: Yo
+       Quién tiene acceso: Cualquier usuario
+     Implementar y autorizar con la cuenta de Google.
+  d. Copiar la "URL de la aplicación web" (termina en /exec).
+  e. Abrir js/config.js y pegarla entre las comillas de OPINIONES_URL.
+  f. Volver a subir js/config.js. Enviar una opinión de prueba: debe
+     aparecer una fila en la hoja "Opiniones".
+Mientras OPINIONES_URL esté vacío, el formulario avisa que está en modo
+de prueba y no envía nada.
+Cada fila guarda: fecha, tipo (general / senda / ocasión / línea),
+referencia, título, senda, valoración, opinión, nombre, localidad, página.
+Las opiniones NO se publican en el sitio.
+
+3) CORREGIR UBICACIONES EN EL MAPA
+Proceden del SIG (exactas): límite del partido, arroyos, caminos, las 13
+plazas rurales, senderos TIB, escuelas rurales, cementerio, Azcuénaga,
+Cucullú, Franklin, Tuyutí, Heavy, Espora.
+Son APROXIMADAS (borde punteado en el mapa): los puntos de la ciudad
+cabecera (parques, boulevard, Tiro Federal, parador, reserva, sector
+norte), los centros de los 9 Pagos y los 6 desarrollos industriales
+(tomados de la Cartografía de Ocasiones del Plan), Solís, Villa Ruiz,
+Villa Espil, San Alberto y Km 108.
+Para corregirlas: abrir  index.html#/mapa?editar=1 , arrastrar cada punto
+a su lugar y copiar el texto que aparece; con esas coordenadas se
+reemplazan los valores "ll" en js/datos.js (y "p":"aprox" pasa a "sig").
+
+4) QUÉ ES DEL PLAN Y QUÉ ES AYUDA DE LECTURA
+  · Lectura "Completa": texto íntegro del proyecto, sin modificar.
+  · Síntesis, claves, preguntas y epígrafes de imágenes: redacción de
+    apoyo elaborada a partir de ese texto. Conviene revisarlas.
+  · Las Ocasiones de los Pueblos se muestran dentro de la Senda del
+    Habitar, como en el borrador (códigos con sufijo H).

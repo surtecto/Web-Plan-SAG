@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Plan de Ordenamiento Territorial · San Andrés de Giles 2020–2030</title>
+<meta name="description" content="Sendas, Líneas y Ocasiones del Plan de Ordenamiento Territorial del Partido de San Andrés de Giles. Proyecto en debate: conocé los fundamentos y dejá tu opinión.">
+<meta name="theme-color" content="#1C1A14">
+<meta property="og:title" content="Plan de Ordenamiento Territorial · San Andrés de Giles">
+<meta property="og:description" content="Sendas, Líneas y Ocasiones. Un proyecto para conocer, recorrer en el mapa y opinar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;1,300;1,400&family=Barlow+Condensed:wght@500;600&family=EB+Garamond:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="nivel-2">
+<a class="salto" href="#contenido">Ir al contenido</a>
+
+<header class="cabecera">
+  <a class="marca" href="#/" aria-label="Inicio">
+    <span class="marca-plan">PLAN <b>SAG</b></span>
+    <span class="marca-sub">2020<i>…</i>2030</span>
+  </a>
+  <nav class="nav-sup" aria-label="Secciones">
+    <a href="#/fundamentos" data-nav="fundamentos">Fundamentos</a>
+    <a href="#/sendas" data-nav="sendas">Sendas</a>
+    <a href="#/lineas" data-nav="lineas">Líneas</a>
+    <a href="#/mapa" data-nav="mapa">Mapa</a>
+    <a href="#/datos" data-nav="datos">Territorio</a>
+    <a href="#/opinar" data-nav="opinar" class="nav-opinar">Opinar</a>
+  </nav>
+  <div class="niveles" role="group" aria-label="Profundidad de lectura">
+    <span class="niveles-rot">Lectura</span>
+    <button type="button" data-nivel="1" title="Lo esencial">Breve</button>
+    <button type="button" data-nivel="2" title="Con claves, imágenes y líneas">Media</button>
+    <button type="button" data-nivel="3" title="Con el texto completo del Plan">Completa</button>
+  </div>
+</header>
+
+<main id="contenido" tabindex="-1"></main>
+
+<footer class="pie">
+  <div class="pie-in">
+    <p class="pie-lema">planeando diversidades crecientes</p>
+    <p><strong>CMDOT</strong> — Consejo Municipal para el Desarrollo y el Ordenamiento Territorial · Plan de Ordenamiento Territorial del Partido de San Andrés de Giles 2020/2030.</p>
+    <p class="pie-nota">Contenido basado en el texto del Plan en su versión de proyecto (borrador de marzo–abril de 2025). Es una propuesta preliminar, con resultados provisorios, puesta a debate. Las síntesis, claves y preguntas son ayudas de lectura; el texto completo de cada sección es el del Plan. Las localizaciones marcadas como aproximadas son indicativas.</p>
+  </div>
+</footer>
+
+<nav class="nav-inf" aria-label="Secciones">
+  <a href="#/" data-nav="inicio"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7M5 10v10h14V10"/></svg><span>Inicio</span></a>
+  <a href="#/sendas" data-nav="sendas"><svg viewBox="0 0 24 24"><path d="M2 17c5 0 5-10 10-10s5 10 10 10M2 7c4 0 6 3 8 5"/></svg><span>Sendas</span></a>
+  <a href="#/lineas" data-nav="lineas"><svg viewBox="0 0 24 24"><path d="M3 6c6 0 6 12 18 12M3 18c6 0 6-12 18-12M3 12h18"/></svg><span>Líneas</span></a>
+  <a href="#/mapa" data-nav="mapa"><svg viewBox="0 0 24 24"><path d="M12 21s-6-6.2-6-11a6 6 0 0112 0c0 4.800-6 11-6 11z"/><circle cx="12" cy="10" r="2.200"/></svg><span>Mapa</span></a>
+  <a href="#/opinar" data-nav="opinar"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg><span>Opinar</span></a>
+</nav>
+
+<div class="visor" id="visor" hidden role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+  <button class="visor-x" type="button" aria-label="Cerrar">×</button>
+  <button class="visor-ant" type="button" aria-label="Anterior">‹</button>
+  <figure><div class="visor-marco"><img alt=""></div><figcaption></figcaption></figure>
+  <button class="visor-sig" type="button" aria-label="Siguiente">›</button>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/datos.js"></script>
+<script src="js/geo.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin="" defer></script>
+<script src="js/app.js" defer></script>
+</body>
+</html>
