@@ -1,0 +1,139 @@
+VERIFICACIÓN AUTOMÁTICA — Playwright (Chromium) · 5-10-2026
+Escritorio 1366×800 y móvil 390×844 (táctil).
+125/125 comprobaciones correctas.
+
+ESCRITORIO
+  [ok] Carga inicial con título
+  [ok] Tipografías locales cargadas (Piazzolla, Archivo)
+  [ok] Sin dependencias externas salvo el mapa
+  [ok] Barra de navegación visible: .nav-sup
+  [ok] La otra barra está oculta
+  [ok] Navegación → fundamentos
+  [ok] Navegación → sendas
+  [ok] Navegación → lineas
+  [ok] Navegación → mapa
+  [ok] Navegación → datos
+  [ok] Navegación → opinar
+  [ok] Marca vuelve al inicio
+  [ok] Botón atrás del navegador
+  [ok] CTA portada «Recorrer las Sendas»
+  [ok] CTA portada «Ver el mapa»
+  [ok] CTA portada «Opinar»
+  [ok] CTA «Leer los fundamentos»
+  [ok] CTA «Dejar una opinión»
+  [ok] Portada: 4 parcelas de Sendas
+  [ok] Parcela → Senda Ambiente
+  [ok] Tarjeta → Ocasión
+  [ok] CTA «Opinar sobre esta Ocasión» lleva el contexto
+  [ok] Lectura nivel 1
+  [ok] Lectura nivel 2
+  [ok] Lectura nivel 3
+  [ok] El nivel de lectura se recuerda
+  [ok] Botón «Pasar a lectura media»
+  [ok] Botón de texto grande agranda y no desborda
+  [ok] Visor de imágenes abre
+  [ok] Visor: siguiente
+  [ok] Visor: cierra con Escape
+  [ok] Visor: cierra con el botón
+  [ok] Chip de Línea → página Líneas con la línea marcada
+  [ok] Ocasión siguiente
+  [ok] Ocasión anterior
+  [ok] Líneas: 46 líneas en 12 familias
+  [ok] Filtro de familia (Salud)
+  [ok] Filtro «Todas»
+  [ok] Línea → Ocasión donde se anuda
+  [ok] Fundamentos: desplegable de texto completo
+  [ok] Mapa: marcadores de Ocasiones y plazas
+  [ok] Mapa: límite del partido y arroyos dibujados
+  [ok] Mapa: filtro por Senda oculta marcadores
+  [ok] Mapa: abre enfocado con ficha de la Ocasión
+  [ok] Mapa: ficha → Ocasión
+  [ok] Minimapa en la Ocasión
+  [ok] Formulario: vacío muestra error y no envía
+  [ok] Formulario: contador de caracteres
+  [ok] Formulario sin planilla conectada: avisa modo de prueba
+  [ok] Formulario: envía los datos correctos (planilla simulada)
+  [ok] Formulario: confirma y se limpia
+  [ok] Formulario: trampa anti-robots bloquea el envío
+  [ok] Opinar con contexto de Senda
+  [ok] Opinar con contexto de Línea
+  [ok] Formulario: si falla la red avisa y conserva el texto
+  [ok] Sin desborde horizontal en 39 páginas
+  [ok] Sin imágenes ni fondos rotos
+  [ok] Controles con tamaño táctil ≥ 40 px
+  [ok] Nada queda oculto tras recorrer la página
+  [ok] Ruta inexistente muestra aviso
+  [ok] Consola sin errores ni advertencias
+  [ok] Sin recursos locales fallidos
+  [ok] Con «reducir movimiento» todo es visible sin animación
+
+MOVIL
+  [ok] Carga inicial con título
+  [ok] Tipografías locales cargadas (Piazzolla, Archivo)
+  [ok] Sin dependencias externas salvo el mapa
+  [ok] Barra de navegación visible: .nav-inf
+  [ok] La otra barra está oculta
+  [ok] Navegación → sendas
+  [ok] Navegación → lineas
+  [ok] Navegación → mapa
+  [ok] Navegación → opinar
+  [ok] Navegación → inicio
+  [ok] Marca vuelve al inicio
+  [ok] Botón atrás del navegador
+  [ok] CTA portada «Recorrer las Sendas»
+  [ok] CTA portada «Ver el mapa»
+  [ok] CTA portada «Opinar»
+  [ok] CTA «Leer los fundamentos»
+  [ok] CTA «Dejar una opinión»
+  [ok] Portada: 4 parcelas de Sendas
+  [ok] Parcela → Senda Ambiente
+  [ok] Tarjeta → Ocasión
+  [ok] CTA «Opinar sobre esta Ocasión» lleva el contexto
+  [ok] Lectura nivel 1
+  [ok] Lectura nivel 2
+  [ok] Lectura nivel 3
+  [ok] El nivel de lectura se recuerda
+  [ok] Botón «Pasar a lectura media»
+  [ok] Botón de texto grande agranda y no desborda
+  [ok] Visor de imágenes abre
+  [ok] Visor: siguiente
+  [ok] Visor: cierra con Escape
+  [ok] Visor: cierra con el botón
+  [ok] Chip de Línea → página Líneas con la línea marcada
+  [ok] Ocasión siguiente
+  [ok] Ocasión anterior
+  [ok] Líneas: 46 líneas en 12 familias
+  [ok] Filtro de familia (Salud)
+  [ok] Filtro «Todas»
+  [ok] Línea → Ocasión donde se anuda
+  [ok] Fundamentos: desplegable de texto completo
+  [ok] Mapa: marcadores de Ocasiones y plazas
+  [ok] Mapa: límite del partido y arroyos dibujados
+  [ok] Mapa: filtro por Senda oculta marcadores
+  [ok] Mapa: abre enfocado con ficha de la Ocasión
+  [ok] Mapa: ficha → Ocasión
+  [ok] Minimapa en la Ocasión
+  [ok] Formulario: vacío muestra error y no envía
+  [ok] Formulario: contador de caracteres
+  [ok] Formulario sin planilla conectada: avisa modo de prueba
+  [ok] Formulario: envía los datos correctos (planilla simulada)
+  [ok] Formulario: confirma y se limpia
+  [ok] Formulario: trampa anti-robots bloquea el envío
+  [ok] Opinar con contexto de Senda
+  [ok] Opinar con contexto de Línea
+  [ok] Formulario: si falla la red avisa y conserva el texto
+  [ok] Sin desborde horizontal en 39 páginas
+  [ok] Sin imágenes ni fondos rotos
+  [ok] Controles con tamaño táctil ≥ 40 px
+  [ok] Nada queda oculto tras recorrer la página
+  [ok] Ruta inexistente muestra aviso
+  [ok] Consola sin errores ni advertencias
+  [ok] Sin recursos locales fallidos
+  [ok] Con «reducir movimiento» todo es visible sin animación
+
+NO VERIFICADO EN ESTE ENTORNO (sin salida a internet desde el navegador de prueba):
+  - carga de la imagen satelital (Esri) y de la capa de calles
+  - envío real a la planilla de Google (se probó contra un receptor simulado)
+  - navegadores Safari/iOS y Firefox; lector de pantalla
+
+Repetir: instalar Node y Playwright, servir la carpeta (python -m http.server 8765) y ejecutar  node pruebas/prueba.js

@@ -7,14 +7,18 @@ Un sitio estático (no necesita base de datos ni servidor especial).
 Fuente del contenido: "Texto Final Plan SAG - Borrador 02-2025.pdf".
 
   index.html          página única
-  css/estilo.css      identidad visual pampeana
+  css/estilo.css      identidad visual pampeana (versión 2)
   js/config.js        ← LO ÚNICO QUE HAY QUE EDITAR para activar opiniones
   js/datos.js         Sendas, Líneas, Ocasiones, textos, coordenadas
   js/geo.js           límite del partido, arroyos, caminos, plazas rurales,
                       senderos y escuelas rurales (del SIG de la carpeta)
-  js/app.js           funcionamiento
-  img/                mapas, gráficos e imágenes del Plan
+  js/app.js           funcionamiento, fondos y animaciones
+  img/                mapas, gráficos e imágenes del Plan (img/t = miniaturas)
+  fondo/              fotografías y cartografías usadas como fondo
+  fonts/              tipografías Piazzolla y Archivo (alojadas en el sitio)
+  vendor/             librería del mapa (Leaflet), alojada en el sitio
   apps-script/        código para recibir opiniones en una planilla
+  pruebas/            script de verificación (Playwright) y su resultado
 
 1) PUBLICAR
 Subir TODA la carpeta, tal cual, a cualquier hosting:
@@ -24,8 +28,8 @@ Subir TODA la carpeta, tal cual, a cualquier hosting:
 Para probarlo en la computadora conviene abrirlo desde un hosting o un
 servidor local; con doble clic en index.html funciona todo menos, según el
 navegador, el envío de opiniones.
-El mapa satelital, las tipografías y la librería del mapa se cargan de
-internet (Esri, Google Fonts, unpkg): el sitio necesita conexión.
+Tipografías y librería del mapa están dentro de la carpeta: lo único que
+se carga de internet es la imagen satelital del mapa (Esri).
 
 2) ACTIVAR LAS OPINIONES (una sola vez, 5 minutos)
   a. Crear una planilla nueva en Google Sheets (ej. "Opiniones Plan SAG").
@@ -64,3 +68,18 @@ reemplazan los valores "ll" en js/datos.js (y "p":"aprox" pasa a "sig").
     apoyo elaborada a partir de ese texto. Conviene revisarlas.
   · Las Ocasiones de los Pueblos se muestran dentro de la Senda del
     Habitar, como en el borrador (códigos con sufijo H).
+
+5) DISEÑO (versión 2)
+  · Tipografías dibujadas en Argentina, con licencia libre (SIL OFL):
+    Piazzolla (Huerta Tipográfica) para títulos y lectura; Archivo
+    (Omnibus-Type) para textos de interfaz, etiquetas y cifras.
+  · Fondos (carpeta fondo/): vista aérea de la ciudad, foto aérea de 1984,
+    páginas del cuaderno de trabajo del Plan, mensuras y proyecto de Ruta 7
+    del Archivo Histórico de Geodesia, cartografías del Plan (cuencas,
+    humedales, cultivos, caminería virreinal), imágenes satelitales usadas
+    en el Plan y fotografías del pastizal y del Tiro Federal.
+    REVISAR antes de publicar que todas puedan difundirse (en especial las
+    capturas satelitales y las piezas de archivo).
+  · Botón "AA" de la cabecera: agranda todo el texto.
+  · Las animaciones se desactivan solas si el dispositivo pide
+    "reducir movimiento".
